@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ytube — local playlists</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" id="brandHome">▶ ytube</div>
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="Search playlists and videos…" autocomplete="off" />
+      <div id="searchResults" class="search-results hidden"></div>
+    </div>
+    <div class="topbar-actions">
+      <button id="addRootBtn" class="btn">+ Root Folder</button>
+      <button id="addPlaylistBtn" class="btn">+ Playlist Folder</button>
+    </div>
+  </header>
+
+  <main id="main"></main>
+
+  <div id="browseModal" class="modal hidden">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="browseModalTitle">Select Folder</h3>
+        <button id="browseModalClose" class="icon-btn">&times;</button>
+      </div>
+      <div id="browsePath" class="browse-path"></div>
+      <div id="browseList" class="browse-list"></div>
+      <div class="modal-footer">
+        <span id="browseHint" class="hint"></span>
+        <button id="browseUseBtn" class="btn primary">Use This Folder</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

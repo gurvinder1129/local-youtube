@@ -1,0 +1,14 @@
+{
+  "name": "ytube",
+  "version": "1.0.0",
+  "description": "Local video playlist player for locally downloaded video folders",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ffmpeg-static": "^5.2.0"
+  }
+}
